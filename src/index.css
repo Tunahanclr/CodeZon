@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+background-color: #ffff;
+height: 100vh;
+box-sizing: border-box;
+}
+.loader {
+  animation: spin 1s linear infinite;
+  border-top-color: #1f2937;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
