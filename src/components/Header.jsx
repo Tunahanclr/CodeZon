@@ -21,28 +21,20 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a className="hover:text-blue-500 transition-all" href="">
+              <a  hclassName="hover:text-blue-500 transition-all" href="#features">
                 Features
               </a>
             </li>
             <li>
-              <a className="hover:text-blue-500 transition-all" href="">
+              <a className="hover:text-blue-500 transition-all" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a className="hover:text-blue-500 transition-all" href="">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-blue-500 transition-all" href="">
+              <a  className="hover:text-blue-500 transition-all" href="#contact">
                 Contact
               </a>
             </li>
-            <button class="w-24 h-10 rounded-xl bg-blue-400 shadow-md shadow-blue-400 hover:-translate-y-1 transition-all">
-              start
-            </button>
           </ul>
           <button className="lg:hidden ml-4" onClick={handleMenuToggle}>
             <div className="mt-3 pr-4">
@@ -66,22 +58,17 @@ export default function Header() {
           </a>
         </li>
         <li>
-          <a className="hover:text-blue-500 transition-all" href="">
+          <a className="hover:text-blue-500 transition-all" href="#features">
             Features
           </a>
         </li>
         <li>
-          <a className="hover:text-blue-500 transition-all" href="">
+          <a className="hover:text-blue-500 transition-all" href="#about">
             About
           </a>
         </li>
         <li>
-          <a className="hover:text-blue-500 transition-all" href="">
-            Blog
-          </a>
-        </li>
-        <li>
-          <a className="hover:text-blue-500 transition-all" href="">
+          <a className="hover:text-blue-500 transition-all" href="#contact">
             Contact
           </a>
         </li>

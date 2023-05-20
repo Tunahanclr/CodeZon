@@ -7,6 +7,9 @@ background-color: #ffff;
 height: 100vh;
 box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .loader {
   animation: spin 1s linear infinite;
   border-top-color: #1f2937;
@@ -19,4 +22,10 @@ box-sizing: border-box;
   100% {
     transform: rotate(360deg);
   }
+}
+.features-container:hover p{
+  color: rgb(212, 210, 209);
+}
+.features-container:hover .icon{
+  color: white;
 }
