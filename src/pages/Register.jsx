@@ -1,8 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import FormImage from '../components/form/FormImage';
-import LoginForm from '../components/form/LoginForm';
-
+import RegisterForm from "../components/form/RegisterForm"
 export default function Login() {
   return (
     <>
@@ -27,7 +26,7 @@ export default function Login() {
         </NavLink>
       </div>
       <div className="mt-6  ml-3">
-            <LoginForm/>
+            <RegisterForm/>
           </div>
     </div>        
           <div className="absolute top-2 right-6 p-4">

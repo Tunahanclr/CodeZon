@@ -4,6 +4,7 @@ import Landing from "./pages/Landing";
 import Loading from "./ui/Loading";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Home from "./pages/Home"
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/login" element={<Login/>} />
             <Route path="/register" element={<Register/>} />
+            <Route path="/Home" element={<Home/>}/>
           </Routes>
         </BrowserRouter>
       )}
