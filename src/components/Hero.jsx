@@ -6,9 +6,8 @@ export default function Hero() {
     <div className="  mx-auto max-w-6xl">
       <div className="flex flex-col-reverse md:flex-row  justify-between items-center  ">
         <div>
-          <h1 className="text-center text-xl  sm:text-6xl font-semibold">
-            İncrease your Progress by Testing Yourself
-          </h1>
+          <h1 className="text-center text-xl  sm:text-5xl font-semibold">
+          Improve yourself by Testing Yourself. Follow all the news and plan your day         </h1>
           <p className="text-center text-sm mt-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             assumenda ea quo cupiditate facere deleniti fuga officia.

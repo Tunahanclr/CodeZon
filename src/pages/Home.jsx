@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { BrowserRouter, NavLink,Routes,Route, useNavigate } from "react-router-dom";
+import Navbar from "../components/Home/Navbar";
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -29,14 +31,16 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="bg-gray-200 h-screen">
       {isLoggedIn ? (
         <>
-          <h2>Hoşgeldiniz!</h2>
-          <button onClick={handleLogout}>Çıkış Yap</button>
+            <Navbar handleLogout={handleLogout} isLoggedIn={isLoggedIn}/>
         </>
       ) : (
+        <>
         <h2>Lütfen giriş yapın.</h2>
+        <NavLink to={'/login'}>Giriş Sayfasın Git</NavLink>
+        </>
       )}
     </div>
   );

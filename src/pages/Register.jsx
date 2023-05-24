@@ -10,6 +10,11 @@ export default function Login() {
         <FormImage/>
         </div>
         <div className="flex flex-col mx-auto bg-white w-full items-center">
+        <div className="text-center">
+            <NavLink to={'/'} className="text-blue-500 text-2xl md:text-3xl font-bold font-sans">
+              Code Zone
+            </NavLink>
+          </div>
         <div className='flex justify-center flex-col items-center'>
     <h2 className=" sm:text-2xl font-bold text-center w-[400px]">
         Improve yourself every day with the Code Zone platform
@@ -29,9 +34,6 @@ export default function Login() {
             <RegisterForm/>
           </div>
     </div>        
-          <div className="absolute top-2 right-6 p-4">
-            <NavLink to={'/'} className="text-blue-500 text-xl md:text-3xl font-bold font-sans">Code Zone</NavLink>
-          </div>
         </div>
       </div>
     </>

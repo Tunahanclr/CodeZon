@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -25,6 +25,7 @@ export default function LoginForm() {
       }, 1000);
     } catch (err) {
       console.log(err);
+      toast.error("User not found"); // Kullanıcı bulunamadı hatası
     }
   };
 
@@ -60,10 +61,9 @@ export default function LoginForm() {
         </div>
 
         <div className="flex items-center gap-4">
-          <span className="text-xs">Or login with</span>{" "}
-          <span className="font-bold text-sm cursor-pointer hover:underline">
-            Google
-          </span>
+          <NavLink to={'/register'} className="font-bold text-sm cursor-pointer hover:underline">
+            Register
+          </NavLink>
         </div>
       </form>
     </div>
