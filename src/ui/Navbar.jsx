@@ -38,11 +38,6 @@ export default function Navbar({ handleLogout }) {
             </li>
             <li>
               <a href="" className="">
-                News
-              </a>
-            </li>
-            <li>
-              <a href="" className="">
                 Course
               </a>
             </li>
@@ -83,11 +78,6 @@ export default function Navbar({ handleLogout }) {
         <li>
           <a href="" className="text-black hover:text-blue-400">
             Quiz
-          </a>
-        </li>
-        <li>
-          <a href="" className="text-black hover:text-blue-400">
-            News
           </a>
         </li>
         <li>

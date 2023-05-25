@@ -101,8 +101,8 @@ export default function BlogComp() {
         </form>
       </div>
       {posts.map((post, index) => (
-       <div key={index} className="bg-black rounded mt-10 text-white">
-       <h3 className="flex mr-3 text-gray-600 justify-end">{post.username}</h3>
+       <div key={index} className="bg-black/80 rounded mt-10 text-white">
+       <h3 className="flex mr-3 text-gray-400 justify-end">{post.username}</h3>
        <h4 className="font-bold ml-6 text-lg">{post.header}</h4>
        <p className="text-center mt-6 flex justify-center items-center w-[800px] mx-auto">
          {post.content}

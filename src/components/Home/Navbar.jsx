@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import News from "../News/News"
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -9,7 +10,8 @@ export default function Navbar({ handleLogout }) {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="bg-black/80 h-20 text-white">
+<>
+<div className="bg-black/80 h-20 text-white">
       <div className="flex items-center h-full  container mx-auto justify-between">
         <div className="">
           <NavLink
@@ -34,11 +36,6 @@ export default function Navbar({ handleLogout }) {
             <li>
               <a href="" className="">
                 Quiz
-              </a>
-            </li>
-            <li>
-              <a href="" className="">
-                News
               </a>
             </li>
             <li>
@@ -86,11 +83,6 @@ export default function Navbar({ handleLogout }) {
         </li>
         <li>
           <a href="" className="text-black hover:text-blue-400">
-            News
-          </a>
-        </li>
-        <li>
-          <a href="" className="text-black hover:text-blue-400">
             Course
           </a>
         </li>
@@ -102,5 +94,7 @@ export default function Navbar({ handleLogout }) {
         </button>
       </ul>
     </div>
+        <News/>
+</>
   );
 }
