@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineQuiz } from "react-icons/md";
+import { BsNewspaper } from "react-icons/bs";
 import { FcTodoList } from "react-icons/fc";
 import { FaBlog } from "react-icons/fa";
 export default function Features() {
@@ -15,9 +15,9 @@ export default function Features() {
         <div className=" features-container bg-gray-200 hover:text-white  hover:bg-blue-600 transition-all hover:-translate-y-4 h-56 w-[370px] flex flex-col items-center justify-center rounded-md">
           <div>
             <div className="flex justify-center">
-              <MdOutlineQuiz className="text-6xl icon text-blue-500 " />
+              <BsNewspaper className="text-6xl icon text-blue-500 " />
             </div>
-            <h3 className="text-center mt-3 text-2xl">Quiz app</h3>
+            <h3 className="text-center mt-3 text-2xl">News</h3>
             <p className="text-sm text-center mt-4 text-gray-500 px-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusantium corrupti provident suscipit commodi laboriosam tempore
